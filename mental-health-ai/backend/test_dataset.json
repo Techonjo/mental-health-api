@@ -1,0 +1,106 @@
+[
+    {
+        "text": "I had a wonderful day with my family and I feel happy.",
+        "expected": "Normal"
+    },
+    {
+        "text": "I enjoy spending time with my friends and I am excited about the future.",
+        "expected": "Normal"
+    },
+    {
+        "text": "Today was peaceful and I am grateful for everything in my life.",
+        "expected": "Normal"
+    },
+    {
+        "text": "I am looking forward to the weekend and spending time with my family.",
+        "expected": "Normal"
+    },
+    {
+        "text": "I feel good about myself and things are going well.",
+        "expected": "Normal"
+    },
+    {
+        "text": "I have been feeling sad and tired for weeks and nothing seems enjoyable anymore.",
+        "expected": "Depression"
+    },
+    {
+        "text": "I feel worthless and have no motivation to do anything.",
+        "expected": "Depression"
+    },
+    {
+        "text": "I feel empty and hopeless and I have lost interest in everything.",
+        "expected": "Depression"
+    },
+    {
+        "text": "I have been feeling down for a long time and I cannot find joy in the things I used to enjoy.",
+        "expected": "Depression"
+    },
+    {
+        "text": "I wake up every morning feeling exhausted and have no motivation to get out of bed.",
+        "expected": "Depression"
+    },
+    {
+        "text": "I am constantly worried and I cannot relax because I keep thinking about everything.",
+        "expected": "Anxiety"
+    },
+    {
+        "text": "My heart races whenever I have to speak in front of people and I feel extremely nervous.",
+        "expected": "Anxiety"
+    },
+    {
+        "text": "I am worried about my exams and I cannot stop overthinking.",
+        "expected": "Anxiety"
+    },
+    {
+        "text": "I feel nervous all the time and I keep imagining that something bad will happen.",
+        "expected": "Anxiety"
+    },
+    {
+        "text": "I have been having panic attacks and I am constantly afraid that something is wrong.",
+        "expected": "Anxiety"
+    },
+    {
+        "text": "I am thinking about killing myself and I do not want to live anymore.",
+        "expected": "Suicidal"
+    },
+    {
+        "text": "I have been thinking about ending my life.",
+        "expected": "Suicidal"
+    },
+    {
+        "text": "I want to die and I have been thinking about how I could do it.",
+        "expected": "Suicidal"
+    },
+    {
+        "text": "I feel like I cannot continue living and I want to end my life.",
+        "expected": "Suicidal"
+    },
+    {
+        "text": "I am planning to kill myself because I cannot cope anymore.",
+        "expected": "Suicidal"
+    },
+    {
+        "text": "I am broke and frustrated.",
+        "expected": "Depression"
+    },
+    {
+        "text": "I am struggling financially and I feel completely overwhelmed by everything.",
+        "expected": "Depression"
+    },
+    {
+        "text": "I feel like my life is falling apart.",
+        "expected": "Depression"
+    },
+    {
+        "text": "I feel like my world is ending and I do not know what to do anymore.",
+        "expected": "Depression"
+    },
+    {
+        "text": "I am worried about money and I cannot stop thinking about my financial problems.",
+        "expected": "Anxiety"
+    },
+    {
+        "text": "life does not seem meaningful to me,  i don't think it worth living again.",
+        "expected": "Suicidal"
+    }
+]

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  /* Clinical Color Palette */
+  --bg-primary:    #0a1628;
+  --bg-secondary:  #0f1f3d;
+  --bg-surface:    #132044;
+
+  --card-bg:       rgba(255, 255, 255, 0.96);
+  --card-bg-dark:  rgba(16, 32, 64, 0.7);
+  --card-border:   rgba(6, 182, 212, 0.15);
+  --card-border-light: rgba(255,255,255,0.08);
+
+  --text-primary:    #0f172a;
+  --text-secondary:  #475569;
+  --text-muted:      #94a3b8;
+  --text-on-dark:    #f0f6ff;
+  --text-on-dark-muted: #8ba4c7;
+
+  /* Clinical Accent */
+  --accent-teal:   #06b6d4;
+  --accent-teal-hover: #0891b2;
+  --accent-teal-glow: rgba(6, 182, 212, 0.25);
+
+  /* Diagnostic Status Colors */
+  --status-normal:     #10b981;
+  --status-normal-bg:  rgba(16, 185, 129, 0.1);
+  --status-depression: #3b82f6;
+  --status-depression-bg: rgba(59, 130, 246, 0.1);
+  --status-anxiety:    #f59e0b;
+  --status-anxiety-bg: rgba(245, 158, 11, 0.1);
+  --status-suicidal:   #ef4444;
+  --status-suicidal-bg: rgba(239, 68, 68, 0.1);
+
+  --font-body:    'Inter', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', monospace;
+
+  --radius-xs:  6px;
+  --radius-sm:  10px;
+  --radius-md:  14px;
+  --radius-lg:  20px;
+
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.08), 0 8px 24px rgba(0,0,0,0.06);
+  --shadow-elevated: 0 4px 16px rgba(0,0,0,0.12), 0 20px 48px rgba(0,0,0,0.10);
+  --shadow-teal: 0 8px 32px rgba(6, 182, 212, 0.2);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, #091022 100%);
+  background-attachment: fixed;
+  color: var(--text-on-dark);
+  font-family: var(--font-body);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Subtle clinical grid pattern overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(6,182,212,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(6,182,212,0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ambient glow spots */
+body::after {
+  content: "";
+  position: fixed;
+  width: 60vw;
+  height: 60vw;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(6,182,212,0.06) 0%, transparent 70%);
+  top: -20%;
+  right: -20%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+#root { position: relative; z-index: 1; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-body);
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+p { margin: 0; }
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: rgba(6,182,212,0.2);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(6,182,212,0.4);
+}
